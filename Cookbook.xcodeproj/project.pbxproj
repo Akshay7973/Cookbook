@@ -51,26 +51,6 @@
 			path = CookbookUITests;
 			sourceTree = "<group>";
 		};
-		BA3B84362F497DD6003B0EA0 /* Views */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BA3B84372F497DDA003B0EA0 /* ViewModels */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		BA3B84382F497DDE003B0EA0 /* Models */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Models;
-			sourceTree = "<group>";
-		};
-		BA3B84592F4983D0003B0EA0 /* Services */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Services;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				BA3B840B2F497D5E003B0EA0 /* Cookbook */,
-				BA3B84592F4983D0003B0EA0 /* Services */,
-				BA3B84382F497DDE003B0EA0 /* Models */,
-				BA3B84372F497DDA003B0EA0 /* ViewModels */,
-				BA3B84362F497DD6003B0EA0 /* Views */,
 				BA3B84192F497D5F003B0EA0 /* CookbookTests */,
 				BA3B84232F497D5F003B0EA0 /* CookbookUITests */,
 				BA3B840A2F497D5E003B0EA0 /* Products */,
@@ -142,10 +118,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				BA3B840B2F497D5E003B0EA0 /* Cookbook */,
-				BA3B84362F497DD6003B0EA0 /* Views */,
-				BA3B84372F497DDA003B0EA0 /* ViewModels */,
-				BA3B84382F497DDE003B0EA0 /* Models */,
-				BA3B84592F4983D0003B0EA0 /* Services */,
 			);
 			name = Cookbook;
 			packageProductDependencies = (
