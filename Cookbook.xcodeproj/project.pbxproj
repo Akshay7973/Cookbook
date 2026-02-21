@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BA3B843F2F49817A003B0EA0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = BA3B843E2F49817A003B0EA0 /* FirebaseDatabase */; };
+		BA3B84412F49817A003B0EA0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BA3B84402F49817A003B0EA0 /* FirebaseFirestore */; };
+		BA3B84432F49817A003B0EA0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BA3B84422F49817A003B0EA0 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BA3B84172F497D5F003B0EA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -45,6 +51,26 @@
 			path = CookbookUITests;
 			sourceTree = "<group>";
 		};
+		BA3B84362F497DD6003B0EA0 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BA3B84372F497DDA003B0EA0 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BA3B84382F497DDE003B0EA0 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA3B84592F4983D0003B0EA0 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3B843F2F49817A003B0EA0 /* FirebaseDatabase in Frameworks */,
+				BA3B84412F49817A003B0EA0 /* FirebaseFirestore in Frameworks */,
+				BA3B84432F49817A003B0EA0 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				BA3B840B2F497D5E003B0EA0 /* Cookbook */,
+				BA3B84592F4983D0003B0EA0 /* Services */,
+				BA3B84382F497DDE003B0EA0 /* Models */,
+				BA3B84372F497DDA003B0EA0 /* ViewModels */,
+				BA3B84362F497DD6003B0EA0 /* Views */,
 				BA3B84192F497D5F003B0EA0 /* CookbookTests */,
 				BA3B84232F497D5F003B0EA0 /* CookbookUITests */,
 				BA3B840A2F497D5E003B0EA0 /* Products */,
@@ -109,9 +142,16 @@
 			);
 			fileSystemSynchronizedGroups = (
 				BA3B840B2F497D5E003B0EA0 /* Cookbook */,
+				BA3B84362F497DD6003B0EA0 /* Views */,
+				BA3B84372F497DDA003B0EA0 /* ViewModels */,
+				BA3B84382F497DDE003B0EA0 /* Models */,
+				BA3B84592F4983D0003B0EA0 /* Services */,
 			);
 			name = Cookbook;
 			packageProductDependencies = (
+				BA3B843E2F49817A003B0EA0 /* FirebaseDatabase */,
+				BA3B84402F49817A003B0EA0 /* FirebaseFirestore */,
+				BA3B84422F49817A003B0EA0 /* FirebaseStorage */,
 			);
 			productName = Cookbook;
 			productReference = BA3B84092F497D5E003B0EA0 /* Cookbook.app */;
@@ -195,6 +235,9 @@
 			);
 			mainGroup = BA3B84002F497D5E003B0EA0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BA3B843D2F49817A003B0EA0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BA3B840A2F497D5E003B0EA0 /* Products */;
 			projectDirPath = "";
@@ -400,11 +443,14 @@
 				DEVELOPMENT_TEAM = 25338YW52K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take photos of your recipe";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Select Recipe photos from your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,7 +463,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -432,11 +478,14 @@
 				DEVELOPMENT_TEAM = 25338YW52K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take photos of your recipe";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Select Recipe photos from your library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +498,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -578,6 +627,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA3B843D2F49817A003B0EA0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA3B843E2F49817A003B0EA0 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA3B843D2F49817A003B0EA0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		BA3B84402F49817A003B0EA0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA3B843D2F49817A003B0EA0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BA3B84422F49817A003B0EA0 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA3B843D2F49817A003B0EA0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA3B84012F497D5E003B0EA0 /* Project object */;
 }
